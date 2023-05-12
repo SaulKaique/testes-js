@@ -7,3 +7,11 @@ body{
     background-image: linear-gradient(to bottom, rgb(27, 138, 212), rgb(87, 223, 110));
 
 }
+
+#conteiner{
+        position: absolute;
+        padding: 0px;
+    height: 200px;
+    width: 500px;
+    margin-left: 300px;
+}
