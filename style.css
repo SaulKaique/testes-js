@@ -8,10 +8,15 @@ body{
 
 }
 
-#conteiner{
-        position: absolute;
-        padding: 0px;
-    height: 200px;
-    width: 500px;
-    margin-left: 300px;
+.destaque{
+    background-color: yellow;
+
+
+}
+
+.sublinhado{
+    font-weight: bold;
+    font-size: 2em;
+
+
 }

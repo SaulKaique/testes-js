@@ -1,9 +1,7 @@
-const paragrafos = document.querySelector('div');
-const pars= paragrafos.querySelectorAll('p');
+const  listalinguagens = document.getElementById('linguagem');
 
-const p1 = pars[0];
-const imagem = document.querySelector('#kiri ');
+const linguagenpreferida =  'JavaScript';
 
-console.log(imagem);
 
-imagem.attributes[2].name
+listalinguagens.insertAdjacentHTML('beforeend','<li class="destaque">C#</li>')
+listalinguagens.insertAdjacentHTML('beforeend', `${linguagenpreferida}`)
