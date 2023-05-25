@@ -3,7 +3,7 @@ const url = 'https://api.giphy.com/v1/gifs/search';
 let busqueda = '?q=';
 
 const key = '&api_key=80dSEX3A138U9jkOS9KxafX50StgjIkp';
-const limite = "&limit=1";
+const limite = "&limit=90";
 
 let q = "";
 
@@ -20,9 +20,7 @@ btn.onclick = () => {
         urlcompleta = url + busqueda + q +  key +limite;
      getdata(); 
 
-     urlcompleta = url + busqueda + q + key +limite ;
 
-        getdata();
 
 }
 
@@ -48,18 +46,20 @@ const getdata = async () => {
       
 
  
-for (let i = 0; i < giphy.data.length; i++) {
+for (const i = 0; i < giphy.data.length; i + 1) {
+       
+       
         const gif = document.createElement('img');
         
        gif.src = giphy.data[i].images['original'].url;
         gif.className = "mb-3";
         document.getElementById("portfolio").appendChild(gif);
-        console.clear();
+       
       }
 
 })
 }  
-      getdata();
+      
 
       
 
