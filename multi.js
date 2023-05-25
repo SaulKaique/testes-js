@@ -46,7 +46,7 @@ const getdata = async () => {
       
 
  
-for (const i = 0; i < giphy.data.length; i + 1) {
+for (const i = 0; i < giphy.data.length; i ) {
        
        
         const gif = document.createElement('img');
